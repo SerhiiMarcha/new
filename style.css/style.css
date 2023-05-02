@@ -1,0 +1,32 @@
+
+  .modal-form-treaty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  
+    margin-bottom: 24px;
+  } 
+
+  .modal-form-treaty-box {
+    appearance: none;
+  }
+
+  .modal-form-treaty-unchecked {
+    opacity: 1;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .modal-form-treaty-box:checked + .modal-form-treaty-icon > .modal-form-treaty-unchecked {
+    opacity: 0;
+  }
+  
+  .modal-form-treaty-checked {
+    opacity: 0;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .modal-form-treaty-box:checked + .modal-form-treaty-icon > .modal-form-treaty-checked {
+    opacity: 1;
+  }
